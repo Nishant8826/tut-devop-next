@@ -21,7 +21,7 @@ export default function PageWrapper({ children }: { children: React.ReactNode })
       initial="hidden"
       animate="enter"
       exit="exit"
-      transition={{ type: 'linear', duration: 0.4 }}
+      transition={{ type: 'tween', ease: 'linear', duration: 0.4 }}
       className="flex-grow"
     >
       {children}
