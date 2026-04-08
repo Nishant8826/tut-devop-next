@@ -9,7 +9,7 @@
   --color-card: var(--card);
 }
 
-:root {
+:root, [data-theme='light'] {
   --background: #ffffff;
   --foreground: #0f172a;
   --primary: #3b82f6;
@@ -53,6 +53,13 @@
   --accent: #fbbf24;
   --card: #5b21b6;
 }
+
+/* 
+  WHAT: Global styles for the application.
+  WHY: Ensures consistent typography and colors across the app.
+  HOW: Using Tailwind v4 @import and CSS variables.
+  IMPACT: Provides a solid foundation for styling and enables easy theme switching.
+*/
 
 @layer base {
   * {
